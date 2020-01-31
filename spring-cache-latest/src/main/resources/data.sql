@@ -1,0 +1,1 @@
+insert into book(id,name,author) values (1,'java', 'sai'),(2,'angular', 'chandra'),(3,'c++', 'Shiva');
