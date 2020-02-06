@@ -34,7 +34,6 @@ public class BookService {
 	@CacheEvict(value = "book", allEntries = true)
 	public void delete(Long id) {
 		Book book = bookReposiroty.getOne(id);
-		if(book != null)
-			bookReposiroty.delete(book);
+		bookReposiroty.delete(book);
 	}
 }

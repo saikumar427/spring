@@ -10,7 +10,7 @@ import com.sai.spring.springcache.bean.Exception;
 @RestControllerAdvice
 public class CustomException {
 
-	@ExceptionHandler
+	@ExceptionHandler()
 	public Exception customException(java.lang.Exception e) {
 		Exception exception = new Exception();
 		exception.setStatusCode(500);
